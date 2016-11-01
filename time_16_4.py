@@ -7,8 +7,8 @@ print('Phyllis Torres\n\n')
 
 print('This program will use a function that takes a given number of seconds and adds it to a time object. ')
 print('The function returns the a new time object and will not modify the original time passed to function.')
+
 # create a time class
-# noinspection PyClassHasNoInit
 class Time:
     def __init__(self):
         self.minute = None
@@ -33,7 +33,6 @@ def int_to_time(seconds):
 
 # create function to increment the time by the incremental number and return modified time
 def increment(time, inc):
-    time1 = Time()  # create new time object that will have the incremented time in it
     time1 = time    # move the original time to be incremented in the return field
     time1 += inc    # increment the time
     return time1    # return the incremented time
